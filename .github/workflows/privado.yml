@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref_name == github.event.repository.default_branch
     env:
-      PRIVADO_API_TOKEN: "api148cce5d75bbdd3861a83637aed48ea05506a753a7aaffdea6"
+      PRIVADO_API_TOKEN: ${{ secrets.PRIVADO_API_TOKEN }}
       PRIVADO_API_ID: "604DA7E2800AFFE6A7AC8068"
       PRIVADO_API_HOST: "https://mobile-app-test.gcp.privado-dev.com"
       PRIVADO_CI_PLATFORM: "GITHUB_ACTIONS"
